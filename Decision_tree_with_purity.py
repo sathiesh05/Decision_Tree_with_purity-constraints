@@ -2,7 +2,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, export_text,_tree
 from sklearn.metrics import accuracy_score
-import matplotlib.pyplot as plt
 data = pd.read_csv('drug200_1722406166375.csv')
 
 X = data[['Age', 'Sex', 'BP', 'Cholesterol']]
