@@ -34,7 +34,6 @@ class CustomDecisionTreeClassifier(DecisionTreeClassifier):
             if left_child == right_child: 
                 return
 
-            # Recursively prune children
             prune_node(left_child)
             prune_node(right_child)
 
